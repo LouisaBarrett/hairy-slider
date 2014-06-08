@@ -1,0 +1,25 @@
+<h1>Hairy Slider</h1>
+
+<p>Sliding! and Hairyness!</p>
+
+<div class="slider">
+  <ul class="box">
+    <li><%= image_tag "#{@images[0].url_link}" %></li>
+    <li><%= image_tag "#{@images[1].url_link}" %></li>
+    <li><%= image_tag "#{@images[2].url_link}" %></li>
+  </ul>
+</div>
+
+<script>
+  var sliders = []
+  $('.slider').each(function() {
+    sliders.push(new Slider(this))
+  })
+</script>
+
+<div class="slider-nav">
+  <ul>
+    <li><a href="javascript:sliders[0].goToNext()">Next</a></li>
+    <li><a href="javascript:sliders[0].goToPrev()">Previous</a></li>
+  </ul>
+</div>
