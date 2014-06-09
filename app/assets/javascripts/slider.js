@@ -30,3 +30,5 @@ Slider.prototype = {
     this.goTo(this.currentIndex + 1)
   }
 };
+
+
